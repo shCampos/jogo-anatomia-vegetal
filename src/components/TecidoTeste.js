@@ -6,11 +6,13 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    fontFamily: 'sans-serif',
     height: '100%',
     width: '100%',
     borderRadius: '50%',
-    background: 'radial-gradient(ellipse at center, transparent, blue}'
+    background: 'radial-gradient(ellipse at center, #fff 60%, blue 51.5%)',
+    "&:hover": {
+      background: "radial-gradient(ellipse at center, #fff 60%, lightBlue 51.5%)"
+    }
   }
 }))
 
@@ -19,7 +21,9 @@ export default function TecidoTeste() {
 
   return (
     <div style={{width: '500px', height: '500px'}}>
-      <div className={classes.circulo}></div>
+      <div className={classes.circulo}>
+        <div>aaa</div>
+      </div>
     </div>
     
   )
